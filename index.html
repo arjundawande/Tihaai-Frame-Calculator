@@ -39,6 +39,7 @@
           <br>
           <p class="text-primary"><b id="ans"></b></p>
           <p style="display:none;" class="text-danger alert alert-danger" id="error">Error!</p>
+          <p id="chakradharNote"></p>
           <h6 class="fs-6 text-muted alert alert-secondary" style="display:none;" id="note"></h6>
         </div>
       </div>
@@ -55,6 +56,7 @@
     let option = document.getElementById('option');
     let error = document.getElementById('error');
     let output = document.getElementById('ans');
+    let chakradharNote = document.getElementById('chakradharNote');
     let ansA;
     let ansB;
     let ansC;
@@ -64,6 +66,7 @@
     form.addEventListener('submit', (e)=>{
       e.preventDefault();
       if(option.value == "Normal Tihaai"){
+        chakradharNote.textContent = "";
         note.textContent = "The first number represents number of matras of the mukhda and the second represents the matras of 'dha' and the avagraha (if any).";
         if(input.value > 13 && input.value < 17){
           ansA = 4;
@@ -195,6 +198,7 @@
             ansC = 0;
         }
         output.textContent = ansA + " + (" + ansB + " × 3) + " + ansC;
+        chakradharNote.textContent = "Please note that the Chakradhar Tihaai will cone in 2 or 4 aavartans.";
         note.textContent = "The first number represents the number of matras of the main mukhda, the first number in the brackets represents the number of matras of the mukhda of the tihaai & the 'dha'. The '× 3' tells that the part of the bracket is played 3 times. The last number represents the number of matras of the avagraha.(if there is a '-' minus sign before this number, subtract that much matras from the last cycle of the tihaai in that frame.)"
       }
       else{note.textContent = "Please select a valid type of tihaai.";}
