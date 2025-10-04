@@ -60,9 +60,7 @@
     let error = document.getElementById('error');
     let output = document.getElementById('ans');
     let chakradharNote = document.getElementById('chakradharNote');
-    let ansA;
-    let ansB;
-    let ansC;
+    let ansA, ansB, ansC;
     let plus = " + ";
     let note = document.getElementById('note');
     output.textContent = '';
@@ -203,10 +201,9 @@
             ansC = 0;
         }
         output.textContent = ansA + " + (" + ansB + " × 3) + " + ansC;
-        chakradharNote.textContent = "Please note that the Chakradhar Tihaai will come in 2 or 4 aavartans.";
+        chakradharNote.textContent = "Please note that the Chakradhar Tihaai will be of 2 or 4 aavartans.";
         note.textContent = "The first number represents the number of matras of the main mukhda, the first number in the brackets represents the number of matras of the mukhda of the tihaai & the 'dha'. The '× 3' shows that the part of the bracket is played 3 times. The last number represents the number of matras of the avagraha.(if there is a '-' minus sign before this number, subtract that much matras from the last cycle of the tihaai in that frame.)"
       }
-      else{note.textContent = "Please select a valid type of tihaai.";}
       note.style.display = 'block';
     });
   </script>
