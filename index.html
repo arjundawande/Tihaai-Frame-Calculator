@@ -72,12 +72,13 @@
         <br>
         <label for="textarea" class="card-title"><b>Suggestion/Review:</b></label>
         <textarea id="textarea" class="form-control bg-transparent" name="message" required></textarea>
+        <input type="hidden" name="_subject" value="New Message from T.F.C.">
         <!-- Honeypot -->
         <input type="text" name="_honeypot" style="display:none;">
         <!-- Disable Captcha -->
-        <input type="text" name="_captcha" value="false" style="display:none;">
+        <input type="hidden" name="_captcha" value="false">
         <!-- Redirect to Thank You Page -->
-        <input type="text" name="_next" value="https://arjundawande.github.io/" style="display:none;">
+        <input type="hidden" name="_next" value="https://arjundawande.github.io/">
         <br>
         <!-- Submit -->
         <input type="submit" class="btn btn-primary" value="Submit"><br><br>
