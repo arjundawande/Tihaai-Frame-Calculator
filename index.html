@@ -55,7 +55,7 @@
     </div>
   </div><br>
   <!-- Suggestion -->
-  <div class="container-fluid card col shadow-lg text-center border-0 bg-white" id="suggestion" style="display:none;">
+<!--  <div class="container-fluid card col shadow-lg text-center border-0 bg-white" id="suggestion" style="display:none;">
     <div class="row card-body">
       <h3>Suggestions/Reviews</h3><hr>
       <form action="https://formsubmit.co/49d0a79c6f3620b40a477d2bc2dc6f88" method="POST" class="form">
@@ -70,18 +70,18 @@
         <textarea id="textarea" class="form-control bg-transparent" name="message" required></textarea>
         <input type="hidden" name="_subject" value="New Message from T.F.C.">
         <!-- Honeypot -->
-        <input type="text" name="_honeypot" style="display:none;">
+       <!-- <input type="text" name="_honeypot" style="display:none;"> -->
         <!-- Disable Captcha -->
-        <input type="hidden" name="_captcha" value="false">
+        <!--<input type="hidden" name="_captcha" value="false"> -->
         <!-- Redirect to Thank You Page -->
-        <input type="hidden" name="_next" value="https://arjundawande.github.io/Tihaai-Frame-Calculator/additional/ThankYouPage.html">
-        <br>
+      <!--  <input type="hidden" name="_next" value="https://arjundawande.github.io/Tihaai-Frame-Calculator/additional/ThankYouPage.html">
+        <br> -->
         <!-- Submit -->
-        <input type="submit" class="btn btn-primary" value="Submit"><br><br>
+      <!--  <input type="submit" class="btn btn-primary" value="Submit"><br><br>
         <p class="fs-6 text-muted alert alert-secondary"><i class="bi bi-info-circle"></i> Please note that your suggestion/review will be directly sent to me and will not be displayed anywhere on this website.</p>
       </form>
     </div>
-  </div>
+  </div> -->
   <!-- Copyright Banner/Footer -->
   <footer class="container-fluid text-center">
     <p>&copy; 2025-2026 Arjun Dawande. All Rights Reserved.</p>
@@ -99,14 +99,14 @@
     let ansA, ansB, ansC;
     let plus = " + ";
     let note = document.getElementById('note');
-    let suggest = false;
+   // let suggest = false;
     output.textContent = '';
     form.addEventListener('submit', (e)=>{
       e.preventDefault();
-      if(!(suggest)){
+      /*if(!(suggest)){
         suggest = true;
         suggestion.style.display = "block";
-      }
+      }*/
       if(option.value == "Normal Tihaai"){
         chakradharNote.textContent = "";
         note.textContent = "The first number represents number of matras of the mukhda and the second represents the matras of 'dha' and the avagraha (if any).";
