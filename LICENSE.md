@@ -1,3 +1,3 @@
-Copyright © 2025 Arjun Dawande
+Copyright © 2025-2026 Arjun Dawande
 
 All Rights Reserved.
